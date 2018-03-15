@@ -169,6 +169,10 @@ public class ProgramManager {
     }
     public boolean isInfoEmpty(){
 
+        if (mProgramData == null) {
+            return true;
+        }
+
 
         return mProgramData.empty();
     }
