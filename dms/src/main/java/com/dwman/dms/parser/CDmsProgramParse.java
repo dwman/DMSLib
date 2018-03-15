@@ -84,7 +84,7 @@ public class CDmsProgramParse implements IProgramParse{
 
         //判断id文件是否存在
 
-             if (file.exists() && file.isFile()){
+             if (file.exists() && !file.isDirectory()){
             File parentFile = file.getParentFile();
 
                  //存在时检查完整性
