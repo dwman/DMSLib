@@ -237,6 +237,9 @@ public class CDmsProgramParse implements IProgramParse{
         if (name.equals(fileChild.getParentFile().getName())){
             result =true;
         }
+        if (name.equals("id")){
+            result =true;
+        }
 
 
         return result;
