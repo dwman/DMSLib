@@ -56,6 +56,9 @@ public class ProgramInfo implements Parcelable {
     public String  mSubtitleRecordAmount;                      //字幕数量(多字幕)
     public String contentType;
 
+    public ProgramInfo() {
+    }
+
     protected ProgramInfo(Parcel in) {
         mProgramId = in.readString();
         mPprogramSize = in.readLong();
