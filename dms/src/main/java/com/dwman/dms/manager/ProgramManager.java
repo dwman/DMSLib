@@ -36,6 +36,7 @@ public class ProgramManager {
     private CProgramImport programImport;
     private CProgramDelete cProgramDelete;
     private ProgramData mProgramData;
+    
     private MediaPlayer mediaPlayer = new MediaPlayer();
 
 
@@ -162,7 +163,11 @@ public class ProgramManager {
 
 
     private void dataClear() {
-        mProgramData.clearData();
+        if (mProgramData != null) {
+            mProgramData.clearData();
+        }
+
+
         movieInfos.clear();
         publicAdInfos.clear();
         badAdInfos.clear();
