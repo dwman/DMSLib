@@ -103,13 +103,15 @@ public class CDmsProgramParse implements IProgramParse{
 
                  if (programType==ProgramInfo.TYPE_MOVIE){
                      isIntegrity = false;
+                     //没有id文件时不解析
+                     return;
+
 
                  }else {
                      isSpecialAd = true;
                  }
 
-                 //没有id文件时不解析
-                 return;
+
 
              }
 
